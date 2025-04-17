@@ -8,7 +8,7 @@
     <title>Empire burguer</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="header-img">
             <img class="header-logo" src="imgs/logo.png" alt="logo">
         </div>
@@ -21,13 +21,13 @@
         <div class="header-contact">
             <img class="header-ifood" src="imgs/ifood.svg" alt="ifood">
             <img class="header-ig" src="imgs/instagram.svg" alt="instagram">
-            <hr>
+            <hr style="border: none;border-left: 2px solid #E3311D;">
             <button class="header-button">
                 <img class="header-wts" src="imgs/whatsapp.svg" alt="contato">
                 Contato
             </button>
         </div>
-    </header>
+    </header >
     <main>
         <div class="container-inicial">
             <p>Uma nova experiência!</p>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="divisor2">
-                <div class="phonediv">
+            <div class="phonediv">
                 <img src="imgs/phone.svg" alt="phone">
             </div>
                 <div class="sub-divisor2">
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-info">
+        <div id="promoc" class="grid-info">
             <h2>Ofertas Especiais</h2>
             <p>Aproveite todas as nossas ofertasm fiquem de olhos abertos, porque sempre estamos mudando o nosso cardápio</p>
         </div>
@@ -74,19 +74,21 @@
                 <p>250kg</p>
             </div>
             <div class="grid-img2">
-                <h2>Batata</h2>
-                <p>150kg</p>
-            </div>
-            <div class="grid-img3">
                 <h2>Sorvete</h2>
                 <p>50kg</p>
             </div>
+            <div class="grid-img3">
+                <h2>Batata</h2>
+                <p>150kg</p>
+            </div>
         </div>
+        <div class="container-local"> 
             <div class="container-entrega">
                 <img class="img-entrega" src="imgs/timer.svg" alt="timer">
+                <hr style="border: none;border-left: 2px solid #fff;">
                 <div class="subc-entrega">
                     <h3>Horário de funcionamento</h3>
-                    <p>Segunfa-feira a sexta-feira: 17h00 - 23h00</p>
+                    <p>Segunda-feira a sexta-feira: 17h00 - 23h00</p>
                     <p>Sabado e Domingo: 18h00 - 23h00</p>
                 </div>
             </div>
@@ -95,9 +97,13 @@
                 <h4>#EMPIREBURGUER</h4>
             </div>
         </div>
+        <section class="container-map" id="local">
+            <h5>onde encontrar nosso castelo</h5>
+            <p>Estaremos de portas abertas para a nossa realeza</p>
+        </section>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.8683750041296!2d-51.20517082447928!3d-29.168550775376318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2e029490c43%3A0xed5867cb97830ecc!2sPlanejar%20Contabilidade!5e0!3m2!1sen!2sbr!4v1744894740484!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
-    <footer>
+    <footer id="contato">
         <div>
             <img class="foote-logo" src="imgs/logo.png" alt="logo">
         </div>
@@ -107,10 +113,6 @@
             <a href="#local">Localização</a>
             <a href="#contato">Contato</a>
         </section>
-        <div class="footer-imgs">
-            <img class="footer-ifood" src="imgs/ifood.svg" alt="ifood">
-            <img class="footer-insta" src="imgs/instagram.svg" alt="instagram">
-        </div>
         <div>   
             <p>2025 © EmpireBurguer. Todos os direitos reservados</p>
         </div>
