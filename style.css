@@ -197,19 +197,42 @@ header{
     border-radius: 14px;
     align-items: center;
     font-size: 26px;
+    transition: transform 0.5s ease;
 }
 .container-entrega p{
     color: #F3DCC2;
     font-size: 12px;
+}
+.container-entrega:hover {
+    transform: scale(1.05);
 }
 .container-secundario{
     padding-left: 40px;
     font-family: 'Montserrat', sans-serif; 
 }
 .container-secundario h4{
+    display: inline-block;
     font-family: 'Luckiest Guy', cursive;
-    color: #E3311D;
+    color: #1D1D1D;
     font-size: 35px;
+    transition: color 0.5s ease-in, underline 0.5s ease;
+}
+.container-secundario h4:hover{
+    color: #E3311D;
+    text-decoration: underline;
+    text-decoration-color: #C12B1A;
+    animation: desliza 0.3s ease-in-out ;
+}
+@keyframes desliza {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
 }
 .container-map{
     display: flex;
@@ -235,11 +258,20 @@ footer{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px); 
     display: flex;
-    flex-direction: row;
+    flex-direction: column  ;
     justify-content:space-around;
     padding: 10px;
+    gap: 10px;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+}
+.footer-container1{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .footer-img{
     margin-left: 100px;
