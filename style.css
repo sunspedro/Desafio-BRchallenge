@@ -61,11 +61,16 @@ header{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease, color 0.5s ease;
 }
 .header-button:hover{
+    color: #fff;
+    background-color: #1D1D1D;
     transform: scale(1.1);
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.header-button:hover .header-wts{
+    filter: brightness(0) invert(1);
 }
 .header-wts{
     max-width: 20px;
@@ -93,13 +98,13 @@ header{
     border-radius: 4px;
     border: none;
     font-size: 14px;
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s ease;
+    transition: transform 0.3s, background-color 0.5s, box-shadow 0.3s ease;
 }
 .main-button:hover{
-    background-color: #C12B1A;
+    background-color: #1D1D1D;
     transform: scale(1.05);
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-    color: #F3DCC2;
+    color: #fff;
     cursor: pointer;
 }
 .container-divisor{
@@ -112,7 +117,7 @@ header{
     align-items: center;
     margin-top: 150px;
     padding-left: 5px;
-    margin-left: 19%;
+    margin-left: 22%;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     font-family: 'Montserrat', sans-serif;
 }
@@ -221,7 +226,7 @@ header{
     color: #E3311D;
     text-decoration: underline;
     text-decoration-color: #C12B1A;
-    animation: desliza 0.3s ease-in-out ;
+    animation: desliza 0.2s ease-in-out ;
 }
 @keyframes desliza {
     0% {
